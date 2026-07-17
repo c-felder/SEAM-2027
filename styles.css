@@ -1,24 +1,5 @@
+## styles.css
 
 ```css
-body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f8fafc;color:#222}
-.topbar{background:#102a43;color:#fff;text-align:center;padding:10px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-nav ul{display:flex;gap:20px;list-style:none}
-nav a{text-decoration:none;color:#102a43;font-weight:600}
-.hero{height:650px;background:url('https://www.gwu.edu/sites/g/files/zaxdzs5066/files/image/FoggyBottom_CampusLife_fallstock15_up-2015-ZWM_9934%20(1).jpg') center/cover}
-.overlay{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;background:rgba(16,42,67,.65);color:white;text-align:center;padding:20px}
-.overlay h2{font-size:56px;max-width:900px}
-.btn{display:inline-block;background:#f1b82d;color:#102a43;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold}
-.container{padding:60px 10%;max-width:1200px;margin:auto}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
-.page-header{background:#183153;color:white;text-align:center;padding:60px 20px}
-.form{display:flex;flex-direction:column;gap:15px;max-width:600px}
-input,select{padding:14px;border:1px solid #ccc;border-radius:8px}
-button{border:none;cursor:pointer}
-table{width:100%;border-collapse:collapse;background:white}
-th,td{padding:15px;border:1px solid #ddd}
-th{background:#183153;color:white}
-footer{background:#102a43;color:white;text-align:center;padding:25px;margin-top:60px}
-@media(max-width:768px){nav{flex-direction:column}nav ul{flex-wrap:wrap;justify-content:center}.overlay h2{font-size:36px}}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f7f9fc;color:#1f2937;line-height:1.6} .topbar{background:#006633;color:#fff;text-align:center;padding:12px;font-weight:600} nav{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:999} nav ul{display:flex;gap:20px;list-style:none} nav a{text-decoration:none;color:#006633;font-weight:600} .hero{height:700px;background:url('https://www.gmu.edu/sites/default/files/styles/16x9/public/2024-09/campus-aerial.jpg') center/cover} .overlay{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;background:rgba(0,51,34,.65);color:white;text-align:center;padding:20px} .overlay h2{font-size:56px;max-width:900px}.btn{display:inline-block;background:#ffcc33;color:#00331f;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold}.container{padding:60px 10%;max-width:1200px;margin:auto}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}.card{background:white;padding:30px;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.08);transition:.3s}.card:hover{transform:translateY(-4px)}.page-header{background:#006633;color:white;text-align:center;padding:80px 20px}.form{display:flex;flex-direction:column;gap:15px;max-width:700px}.input,select,input{padding:14px;border:1px solid #d1d5db;border-radius:8px}button{border:none;cursor:pointer}table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden}th,td{padding:15px;border:1px solid #e5e7eb}th{background:#006633;color:white}footer{background:#00331f;color:white;text-align:center;padding:30px;margin-top:60px}.speaker-grid,.sponsor-grid,.hotel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}@media(max-width:768px){nav{flex-direction:column}nav ul{flex-wrap:wrap;justify-content:center}.overlay h2{font-size:36px}}
 ```
