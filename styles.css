@@ -1,1 +1,205 @@
-:root{--green:#005239;--green2:#003c2b;--gold:#ffc733;--ink:#17211d;--muted:#5f6d66;--paper:#f6f8f7;--white:#fff;--line:#dbe3df;--shadow:0 14px 36px rgba(0,35,24,.12);--radius:18px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Open Sans",Arial,sans-serif;color:var(--ink);line-height:1.65;background:var(--white)}a{color:var(--green)}img{max-width:100%;display:block}.container{width:min(1120px,calc(100% - 2rem));margin:auto}.site-header{position:sticky;top:0;z-index:50;background:rgba(0,60,43,.97);box-shadow:0 4px 20px rgba(0,0,0,.14)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:1rem}.brand{display:flex;align-items:center;gap:.75rem;color:white;text-decoration:none;font-weight:800;line-height:1.1}.brand-mark{width:42px;height:42px;display:grid;place-items:center;background:var(--gold);color:var(--green2);font-weight:900;border-radius:10px}.nav-links{display:flex;gap:.2rem;align-items:center}.nav-links a{color:white;text-decoration:none;padding:.7rem .75rem;border-radius:8px;font-size:.92rem}.nav-links a:hover,.nav-links a[aria-current="page"]{background:rgba(255,255,255,.14)}.menu-button{display:none;background:transparent;border:1px solid rgba(255,255,255,.5);color:#fff;border-radius:8px;padding:.45rem .7rem;font-size:1.2rem}.hero{min-height:430px;display:grid;align-items:end;color:white;background:linear-gradient(90deg,rgba(0,48,34,.92),rgba(0,48,34,.48)),url('https://www.gmu.edu/sites/default/files/styles/extra_large_content_image/public/2024-05/240425015.jpg') center/cover}.hero.small{min-height:310px}.hero-inner{padding:5rem 0 4rem}.eyebrow{display:inline-block;color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:.11em;font-size:.8rem}.hero h1{font-size:clamp(2.4rem,6vw,5rem);max-width:900px;line-height:1.03;margin:.4rem 0 1rem}.hero.small h1{font-size:clamp(2.3rem,5vw,4rem)}.hero p{font-size:1.18rem;max-width:760px}.button-row{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.6rem}.btn{display:inline-block;padding:.85rem 1.15rem;border-radius:10px;text-decoration:none;font-weight:800;background:var(--gold);color:var(--green2)}.btn.secondary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.7)}main section{padding:4.5rem 0}.section-alt{background:var(--paper)}.section-title{font-size:clamp(1.8rem,4vw,3rem);line-height:1.15;margin:0 0 .7rem}.lead{font-size:1.12rem;color:var(--muted);max-width:780px}.grid{display:grid;gap:1.3rem}.grid.three{grid-template-columns:repeat(3,1fr)}.grid.two{grid-template-columns:repeat(2,1fr)}.card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;box-shadow:0 5px 18px rgba(0,35,24,.05)}.card h3{margin-top:0}.stat{border-left:5px solid var(--gold)}.speaker{padding:0;overflow:hidden}.speaker-photo{aspect-ratio:4/3;background:linear-gradient(135deg,var(--green),#0b7b59);display:grid;place-items:center;color:white;font-size:3rem;font-weight:900}.speaker-body{padding:1.25rem}.notice{background:#fff7d6;border-left:5px solid var(--gold);padding:1rem 1.2rem;border-radius:8px}.schedule-day{margin:2rem 0}.schedule-item{display:grid;grid-template-columns:150px 1fr;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}.time{font-weight:800;color:var(--green)}table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden}th,td{text-align:left;padding:1rem;border-bottom:1px solid var(--line)}th{background:var(--green);color:white}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}label{font-weight:700;display:block}input,select,textarea{width:100%;padding:.8rem;border:1px solid #aebbb5;border-radius:8px;font:inherit}textarea{min-height:130px}.full{grid-column:1/-1}details{border-bottom:1px solid var(--line);padding:1rem 0}summary{font-weight:800;cursor:pointer}.footer{background:var(--green2);color:white;padding:3rem 0}.footer a{color:var(--gold)}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem}.fine{color:#c7d5cf;font-size:.9rem}.tag{display:inline-block;background:#e5f1ec;color:var(--green);padding:.25rem .55rem;border-radius:99px;font-size:.82rem;font-weight:800}.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:white;padding:.6rem;z-index:99}@media(max-width:800px){.menu-button{display:block}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:var(--green2);padding:1rem;flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.grid.three,.grid.two,.footer-grid,.form-grid{grid-template-columns:1fr}.schedule-item{grid-template-columns:1fr;gap:.1rem}.hero{min-height:390px}.hero-inner{padding:4rem 0 3rem}}
+:root {
+  --green: #005239;
+  --green2: #003c2b;
+  --gold: #ffc733;
+  --ink: #17211d;
+  --muted: #5f6d66;
+  --paper: #f6f8f7;
+  --white: #fff;
+  --line: #dbe3df;
+  --shadow: 0 14px 36px rgba(0,35,24,.12);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans",Arial,sans-serif;
+  color: var(--ink);
+  line-height: 1.65;
+  background: var(--white);
+}
+
+a {
+  color: var(--green);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1120px,calc(100% - 2rem));
+  margin: auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(0,60,43,.97);
+  box-shadow: 0 4px 20px rgba(0,0,0,.14);
+}
+
+.nav {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: var(--gold);
+  color: var(--green2);
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: .2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: .7rem .75rem;
+  border-radius: 8px;
+  font-size: .92rem;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  background: rgba(255,255,255,.14);
+}
+
+.menu-button {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.5);
+  color: #fff;
+  border-radius: 8px;
+  padding: .45rem .7rem;
+  font-size: 1.2rem;
+}
+
+.hero {
+  min-height: 430px;
+  display: grid;
+  align-items: end;
+  color: white;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,48,34,.92),
+      rgba(0,48,34,.48)
+    ),
+    url('https://www.gmu.edu/sites/default/files/styles/extra_large_content_image/public/2024-05/240425015.jpg') center/cover;
+}
+
+.hero.small {
+  min-height: 310px;
+}
+
+.hero-inner {
+  padding: 5rem 0 4rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: var(--gold);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .11em;
+  font-size: .8rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem,6vw,5rem);
+  max-width: 900px;
+  line-height: 1.03;
+  margin: .4rem 0 1rem;
+}
+
+.hero.small h1 {
+  font-size: clamp(2.3rem,5vw,4rem);
+}
+
+.hero p {
+  font-size: 1.18rem;
+  max-width: 760px;
+}
+
+.button-row {
+  display: flex;
+  gap: .8rem;
+  flex-wrap: wrap;
+  margin-top: 1.6rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: .85rem 1.15rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  background: var(--gold);
+  color: var(--green2);
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.7);
+}
+
+main section {
+  padding: 4.5rem 0;
+}
+
+.section-alt {
+  background: var(--paper);
+}
+
+.section-title {
+  font-size: clamp(1.8rem,4vw,3rem);
+  line-height: 1.15;
+  margin: 0 0 .7rem;
+}
+
+.lead {
+  font-size: 1.12rem;
+  color: var(--muted);
+  max-width: 780px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.3rem;
+}
+
+.grid.three
